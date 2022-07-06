@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="styles2.css">
+<title>Login</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">FORTRESS BANK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Login</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html" >Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="About.html" >About us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+	<!-- container -->
+    <div class="container">
+		
+		<h3 class="title">Fortress Bank</h3>
+		<em class="desg">Welcome to the allies area.</em>
+		<p class="desc">With the commitment to always provide tools that support the sales management and the achievement of objectives, we offer you our allies area.</p>
+		
+	
+  <!-- LOGIN FORM -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-address-card" aria-hidden="true"></i></span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock    "></i></span>
+    </div>
+    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+  </div>
+  <button type="button" class="btn btn-outline-primary">Login</button>
+  <a href="#">Forgot your access key</a>
+  <p>&copy; all rights reserved</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+	window.sr = ScrollReveal();
+  	  
+	sr.reveal('.navbar-brand', {
+    duration: 3000,
+    origin: 'bottom'
+  });
+  
+			
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	  anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+  
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+		  behavior: 'smooth'
+		});
+	  });
+	});
+  
+  </script>
+</body>
+</html>

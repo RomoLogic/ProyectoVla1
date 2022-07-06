@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAWsnRAAd06AD3+voAAwajAM/rvADI2tsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzEURERBEzMzEAAEQAABMzEABEREQAATEABEIiJEAAEQBEJEQiRAAVBEREBCIkAFYAAABEIkQAZQAAREIkQABWAARCJEQAAGUARCJEAAAAVgBCIkBEREBhAEQiREJEABEABEIiJEAAExAAREREAAEzMQAARAAAEzMzEURERBEzMAAAAAHngAADgcAABwDgAAYAYAAEEGAAB+BgAAeA4AAHAeAABgfgAAYIIAAGAGAABwDgAAOBwAAB54AAAAAAAA" rel="icon" type="image/x-icon" />
+<title>Fortress Bank</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">FORTRESS BANK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Login</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html" >Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="About.html" >About us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<!-- JUMBOTRON -->
+<div class="jumbotron">
+  <h1 class="display-4">FORTRESS BANK</h1>
+  <p class="lead">THIS IS THE SAFEST BANK IN THE WORLD, THE ONLY ONE WITH THE MOST ADVANCED AND EFFICIENT CUSTOMER SECURITY SYSTEMS.</p>
+  <p class="info-color">Meet our partners around the world.</p>
+  <a class="btn btn-primary btn-lg" onclick="Mostrar()" href="#ventana" role="button">Our partners</a>
+</div>
+      <!-- section 3 images -->
+      <div class="container" id="cards">
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/logo.png" class="card-img-top1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brand</h5>
+            <p class="card-text">Our brand is recognized worldwide</p>
+            <a href="#" id="toggle" class="btn btn-outline-secondary header-btn btn-sm mt-2">hide info</a>
+            <br><br>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/VAULT2.jpg" class="card-img-top2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vault</h5>
+            <p class="card-text">Maximum security vaults.</p>
+            <a href="#" id="toggle" class="btn btn-outline-secondary header-btn btn-sm mt-2">hide info</a>
+            <br><br>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/DIAMONDS.jpg" class="card-img-top3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Diamonds</h5>
+            <p class="card-text">international diamond trading.</p>
+            <a href="#" id="toggle" class="btn btn-outline-secondary header-btn btn-sm mt-2">hide info</a>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- ventana modal -->
+<div #ventana>
+  
+<div class="modal-dialog modal-sm">
+  <div class="container m-5  text-center">
+   
+    <div class="mt-5" id="contenido">
+       
+    </div>
+
+</div>
+
+</div>
+
+</div>
+<!-- footer -->
+<footer class="foot text-center">
+  &copy; 2022 RomoLogic
+  <br>
+ <div>
+  <a href="#" id="show" class="btn btn-outline-warning header-btn btn-sm mt-2">Show info</a>
+ </div>
+ 
+  <div class="social">
+   
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+   
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+<script>
+  window.sr = ScrollReveal();
+
+  sr.reveal('.navbar-brand', {
+    duration: 3000,
+    origin: 'bottom'
+  });
+
+  sr.reveal('.jumbotron', {
+    duration: 2000,
+    origin: 'left',
+    distance: '300px'
+  });
+
+  sr.reveal('.container', {
+    duration: 2000,
+    origin: 'right',
+    distance: '400px'
+  });
+
+  sr.reveal('.nav-link', {
+    duration: 3000,
+    delay: 1000,
+    origin: 'top'
+  });
+  sr.reveal('.social', {
+    duration: 3000,
+    origin: 'top',
+    });
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+</script>
+<script>
+$(toggle).click(function (e) { 
+  e.preventDefault();
+  $(cards).toggle();
+  
+});
+$(show).click(function (e) { 
+  e.preventDefault();
+  $(cards).show();
+  
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.img-fluid{
+    width: 500px;
+    height: 500px;
+}
+footer {
+    background-color:#28a745 ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 28px;
+    color: #c2f4f8;
+}
